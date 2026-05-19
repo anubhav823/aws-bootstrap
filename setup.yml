@@ -1,13 +1,13 @@
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: 2010-09-09
 
 Parameters:
-  CodePipelineName:
+  CodePipelineBucket:
     Type: String
-    Description: 'S3 bucket for artifacts'
+    Description: 'The S3 bucket for CodePipeline artifacts.'
 
 Resources:
-  CodePipelines3Bucket:
-    Type: 'AWS::S3::Bucket'
+  CodePipelineS3Bucket:
+    Type: AWS::S3::Bucket
     DeletionPolicy: Retain
     Properties:
       BucketName: !Ref CodePipelineBucket

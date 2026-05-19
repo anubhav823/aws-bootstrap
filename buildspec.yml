@@ -1,5 +1,4 @@
 version: 0.2
-
 phases:
   install:
     runtime-versions:
@@ -18,4 +17,4 @@ artifacts:
     - server.js
     - package.json
     - appspec.yml
-    - "node_modules/**/*"
+    - 'node_modules/**/*'
